@@ -1,1 +1,3 @@
-# fizkhar-mid
+fizkhar-mid
+
+ember.js implementation of middle tier
