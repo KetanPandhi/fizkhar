@@ -1,3 +1,4 @@
+import { FizSevice } from './services/fiz.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  constructor(private fizService: FizSevice) {
+
+  }
+  onClick() {
+    this.fizService.getIt().subscribe((data) => {
+      this.title = data;
+    });
+  }
 }
